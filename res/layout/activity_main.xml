@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0277BD"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#DF7676"
+            android:text="Department"
+            android:textSize="60dp"/>
+
+        <RadioButton
+            android:id="@+id/Ece"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:buttonTint="#DF1616"
+            android:checked="false"
+            android:text="Ece"
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/Cse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:checked="false"
+            android:text="Cse"
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/Mech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:checked="false"
+            android:text="Mech"
+            android:textSize="30dp" />
+
+        <RadioButton
+            android:id="@+id/Eee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:checked="false"
+            android:text="Eee"
+            android:textSize="30dp" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Selected"
+            android:textSize="20dp"
+            android:id="@+id/button"
+            android:onClick="onclickbuttonMethod"
+            android:layout_gravity="center_horizontal"/>
+
+</RadioGroup>
+</LinearLayout>
